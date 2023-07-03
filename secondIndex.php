@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentals 1.2</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <h1>
@@ -44,7 +45,7 @@
 
     <ul>
         <?php for ($i=0; $i < 10 ; $i++) { ?>
-            <li>
+            <li class="custom-list">
                 <p>
                     Element number <?php echo $i; ?>
                 </p>
