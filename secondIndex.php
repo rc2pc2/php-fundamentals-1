@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentals 1.2</title>
-    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <h1>
@@ -27,7 +26,7 @@
                 $array[] = 'giorgina';
                 array_push($array, 'giorginetta', 'topo gigio', 'topolina');
 
-                $array['GINA'] = [1,2,3,4,5];
+                // $array['GINA'] = [1,2,3,4,5];
 
                 var_dump($array);
 
@@ -36,7 +35,7 @@
                     'surname' => 'Ginotti',
                 ];
 
-                $arrayLit['name'] = [1,2,3,4,5];
+                // $arrayLit['name'] = [1,2,3,4,5];
 
                 var_dump($arrayLit);
             ?>
@@ -45,13 +44,25 @@
 
     <ul>
         <?php for ($i=0; $i < 10 ; $i++) { ?>
-            <li class="custom-list">
+            <li>
                 <p>
                     Element number <?php echo $i; ?>
                 </p>
             </li>
         <?php } ?>
     </ul>
+
+    <ul>
+        <?php foreach ( $arrayLit as $key => $element ) { ?>
+            <li>
+                <p>
+                    Key <?php echo $key; ?>
+                    Element <?php echo $element; ?>
+                </p>
+            </li>
+        <?php } ?>
+    </ul>
+
 </body>
 </html>
 
