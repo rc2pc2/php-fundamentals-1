@@ -21,26 +21,20 @@
         if ( empty($_GET['word'])){
             echo 'Please type a word to see if it is present';
         } else {
-            // c'e' nell'array?
             if ( in_array($_GET['word'], $words) ){
                 echo 'found it!';
             } else {
                 echo '4000004 not found';
             }
-
-            // non c'e' nell'array
-
         }
-
     ?>
 
     <form action="./checkWord.php" method="get">
-
         <label for="word">
             Check if a word is present
         </label>
-        <input type="text" name="word" id="word">
 
+        <input type="text" name="word" id="word">
         <input type="submit" value="check">
     </form>
 
